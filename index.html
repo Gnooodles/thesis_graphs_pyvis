@@ -24,7 +24,9 @@
         p {
             max-width: 600px;
             text-align: center;
-            color: #333;
+            color: #333;   
+        }
+        .ultimo {
             margin-bottom: 50px;
         }
         .button-container {
@@ -46,7 +48,8 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            width: 150px; /* Dimensione fissa per i bottoni */
+            width: 200px; 
+            text-align: center; 
         }
         .button-container button:hover {
             background-color: #0056b3;
@@ -68,11 +71,12 @@
     </style>
 </head>
 <body>
-    <h1>Grafi</h1>
-    <p></p>
+    <h1>Rete sociale dei docenti del DMIF dell'università di Udine</h1>
+    <p>Questa pagina contiene i due grafi creati e analizzati nella tesi dal titolo "Analisi Bibliometrica dei docenti del DMIF e dei loro co-autori: Costruzione e Analisi di Reti Sociali tramite API di Scopus"</p>
+    <p class="ultimo">Il primo grafo contiene la rete dei soli docenti del DMIF ed i loro co-autori afferenti allo stesso dipartimento, mentre nel secondo è possibile osservare le relazioni tra i docenti del DMIF ed i loro co-autori in tutta l'università di Udine.</p>
     <div class="button-container">
         <a href="./data/DMIF_to_DMIF_coauthor.html"><button>Grafo dei co-autori nel DMIF</button></a>
-        <a href="./data/DMIF_to_UNIUD_coauthor.html"><button>Grafo dei co-autori in tutta UNIUD</button></a>
+        <a href="./data/DMIF_to_UNIUD_coauthor.html"><button>Grafo dei co-autori DMIF in tutta UNIUD</button></a>
     </div>
 </body>
 </html>
